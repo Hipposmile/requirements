@@ -1,5 +1,7 @@
 # Code requirements
 
+Dies gilt nicht für HTML und CSS.
+
 Damit der Code übersichtlich, lesbar, wartbar, qualitativ hochwertig und sicher ist und bleibt, gelten folgende Anforderungen an den Code:
 
 - Typisierung: Alle Variablen, Parameter, Konstanten, Funktionen und Methoden müssen typisiert sein.
