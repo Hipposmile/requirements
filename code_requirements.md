@@ -1,25 +1,36 @@
 # Code requirements
 
-Dies gilt nicht für HTML und CSS.
+This does not apply to HTML and CSS.
 
-Damit der Code übersichtlich, lesbar, wartbar, qualitativ hochwertig und sicher ist und bleibt, gelten folgende Anforderungen an den Code:
+To ensure the code remains clear, readable, maintainable, high-quality, and secure, the following requirements apply:
 
-- Typisierung: Alle Variablen, Parameter, Konstanten, Funktionen und Methoden müssen typisiert sein.
-- Namen:
-  - Alle Namen müssen genau beschreiben, was die Klasse repräsentiert, die Variable speichert oder die Funktion ausführt bzw. speichert, dürfen aber auch keinen unnötigen Kontext enthalten.
-  - Alle Namen müssen auf Englisch verfasst sein.
-  - Alle Namen müssen den Naming-Conventions der jeweiligen Sprache entsprechen (z.B. snake_case für Variablen, Parameter, Funktionen und Methoden, UPPER_SNAKE_CASE für Konstanten und PascalCase für Klassen bei Python oder camelCase für Variablen, Parameter, Konstanten, Funktionen und Methoden und PascalCase für Klassen bei Dart und JavaScript).
-- Funktionen und Methoden:
-  - Jede Funktion und jede Methode muss möglichst kurz sein.
-  - Jede Funktion und jede Methode muss möglichst wenige Abhängigkeiten haben.
-  - Jede Funktion und jede Methode darf nur eine Aufgabe erfüllen und keine "Nebeneffekte" haben.
-  - Code-Wiederholungen müssen durch wiederverwendbare Funktionen, Klassen und Methoden auf ein absolutes Minimum reduziert werden.
-  - Eine Funktion sollte immer entweder etwas ausführen oder etwas zurückgeben, aber nicht beides. Ausnahmen sind explizit zu begründen.
-- Ausnahmen: Der Code muss mit jedem Szenario und jedem User-Input zurechtkommen, ohne abzustürzen. Stattdessen sollen Fehlermeldungen ausgegeben werden, und, wenn ein ungültiger User-Input der Fehler ist, ausgegeben werden, was der Fehler ist. Wenn es sich um einen Fehler im Code an anderer Stelle handelt, muss der Fehler gespeichert werden, sodass alle aufgetretenen Fehler von den Entwicklern eingesehen werden können.
-- Kommentare: Kommentare dürfen nur dort eingesetzt werden, wo sie unbedingt benötigt werden. Sie dürfen nicht beschreiben, was der Code macht, sondern warum er es macht. Im Allgemeinen sollte der Code so verständlich sein, dass man keine Kommentare benötigt.
-- Tests: Jede Einheit (Funktion, Methode, Klasse) des Codes muss testbar sein und durch einen Test abgedeckt werden, die Happy Paths, Edge Cases sowie Fehlerfälle berücksichtigen. Der Testcode muss mit denselben Qualitätsstandards wie der Produktionscode geschrieben werden.
-- Effizienz: Der Code sollte möglichst effizient und schnell gestaltet werden, indem unter Anderem, wo möglich, Konstanten statt Variablen verwendet oder möglichst wenige Datenbank- oder API-Aufrufe gemacht werden. Beim Produktionscode ist diese Effizienz entscheidend, beim Testcode ist sie zweitrangig.
-- Anführungszeichen: Es müssen standardmäßig einzelne Anführungszeichen verwendet werden.
-- Parameter müssen *named parameters* sein bzw. als solche behandelt werden.
+- Typing: All variables, parameters, constants, functions, and methods must be typed.
+- Naming:
+- All names must accurately describe what the class represents, what the variable stores, or what the function executes
+  or stores, without including unnecessary context.
+- All names must be in English.
+- All names must adhere to the naming conventions of the respective language (e.g., snake_case for variables,
+  parameters, functions, and methods; UPPER_SNAKE_CASE for constants; and PascalCase for classes in Python; or camelCase
+  for variables, parameters, constants, functions, and methods; and PascalCase for classes in Dart and JavaScript).
+- Functions and methods:
+- Every function and method must be as short as possible.
+- Every function and method must have as few dependencies as possible.
+- Every function and method must perform only one task and have no "side effects."
+- Code duplication must be reduced to an absolute minimum through the use of reusable functions, classes, and methods.
+- A function should generally either perform an action or return a value, but not both. Exceptions must be explicitly
+  justified.
+- Exceptions: The code must handle every scenario and user input without crashing. Instead, error messages should be
+  displayed; if the error is caused by invalid user input, the specific nature of the error must be indicated. If the
+  error originates elsewhere in the code, it must be logged so that developers can review all errors that have occurred.
+- Comments: Comments should only be used where absolutely necessary. They must describe *why* the code performs an
+  action, not *what* it does. In general, the code should be clear enough that comments are not required. - Tests: Every
+  unit of code (function, method, class) must be testable and covered by tests that account for "happy paths," edge
+  cases, and error scenarios. Test code must be written to the same quality standards as production code.
+- Efficiency: Code should be designed for maximum efficiency and speed—for instance, by using constants instead of
+  variables where possible and minimizing database or API calls. While such efficiency is critical for production code,
+  it is of secondary importance for test code.
+- Quotation marks: Single quotation marks must be used by default.
+- Parameters must be—or be treated as—named parameters.
 
-All diese Guidelines orientieren sich an dem Buch "Clean Code - Refactoring, Patterns, Testen und Techniken für sauberen Code" von Robert C. Martin. Die dort aufgeführten Regeln sollten, genau wie die oben aufgeführten Regeln, unbedingt eingehalten werden.
+All these guidelines are based on the book *Clean Code: A Handbook of Agile Software Craftsmanship* by Robert C. Martin.
+The rules outlined therein—like those listed above—must be strictly adhered to.
